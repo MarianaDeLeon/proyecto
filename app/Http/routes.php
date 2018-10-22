@@ -14,3 +14,31 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/mensaje', function () {
+    echo "hola mundo tic74";
+});
+
+
+
+Route::get('/altacliente','sistema@altacliente');
+/*
+Route::POST('/guardamaestro','curso@guardamaestro')->name('guardamaestro');
+
+Route::get('/reportemaestros','curso@reportemaestros');
+Route::get('/eliminam/{idm}','curso@eliminam')->name('eliminam');
+Route::get('/modificaam/{idm}','curso@modificam')->name('modificam');
+
+Route::POST('/guardaedicionm','curso@guardaedicionm')->name('guardaedicionm');
+*/
+
+
+
+
+
+
+
+
+
+
+
