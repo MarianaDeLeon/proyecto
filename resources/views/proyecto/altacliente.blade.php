@@ -50,13 +50,13 @@ Codigo Postal<input type = 'text' name= 'cp' value="{{old('cp')}}" alt='el codig
 <br>
 Municipio<select name = 'municipio_id'>
 @foreach($municipios as $mun)
- <option value = '{{$mun->municipio_id}}'>{{$mun->municipio}}</option>
+ <option value = '{{$mun->id}}'>{{$mun->municipio}}</option>
  @endforeach
                   </select>
 <br>
 Usuario<select name = 'usuario_id'>
 @foreach($usuarios as $us)
- <option value = '{{$us->usuario_id}}'>{{$us->nombre}}</option>
+ <option value = '{{$us->id}}'>{{$us->nombre}}</option>
  @endforeach
                   </select>
 <br>

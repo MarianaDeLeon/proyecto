@@ -3,7 +3,7 @@
 @section('contenido')
 
 <h1> Alta de usuario</h1>
-<form action ="" method = 'POST' enctype= 'multipart/form-data'>
+<form action ="{{route('guardausuario')}}" method = 'POST' enctype= 'multipart/form-data'>
 {{csrf_field()}}
 
 @if($errors->first('id')) 
@@ -38,10 +38,10 @@ Calle<input type = 'text' name = 'calle' value="{{old('calle')}}">
 Telefono<input type = 'text' name = 'telefono' value="{{old('telefono')}}">
 <br>
 
-@if($errors->first('correo')) 
+@if($errors->first('correo_usu')) 
 <i> {{ $errors->first('correo_usu') }} </i> 
 @endif	<br>
-Telefono<input type ='text' name = 'telefono' value="{{old('telefono')}}">
+Correo<input type ='text' name = 'correo_usu' value="{{old('correo_usu')}}">
 <br>
 @if($errors->first('pass')) 
 <i> {{ $errors->first('pass') }} </i> 
@@ -64,7 +64,7 @@ Activo<select name = 'activo'>
 <i> {{ $errors->first('archivo') }} </i> 
 @endif	<br>
 <br>
-Selecionar Logo <input type = 'file' name= 'archivo'>
+Selecionar Foto <input type = 'file' name= 'archivo'>
 <br>
 <input type = 'submit' value = 'Guardar'>
 </form>
