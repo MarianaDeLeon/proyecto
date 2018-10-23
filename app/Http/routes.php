@@ -20,25 +20,17 @@ Route::get('/mensaje', function () {
 });
 
 
-
+//rupas del catalogo cliente
 Route::get('/altacliente','sistema@altacliente');
+Route::POST('/guardacliente','sistema@guardacliente')->name('guardacliente');
+Route::get('/reportecliente','sistema@reportecliente');
+//rutas del catalogo usuarios
+Route::get('/altausuario','sistema@altausuario');
+
 /*
-Route::POST('/guardamaestro','curso@guardamaestro')->name('guardamaestro');
+Route::get('/eliminam/{idm}','sistema@eliminam')->name('eliminam');
+Route::get('/modificaam/{idm}','sistema@modificam')->name('modificam');
 
-Route::get('/reportemaestros','curso@reportemaestros');
-Route::get('/eliminam/{idm}','curso@eliminam')->name('eliminam');
-Route::get('/modificaam/{idm}','curso@modificam')->name('modificam');
+Route::POST('/guardaedicionm','sistema@guardaedicionm')->name('guardaedicionm');
 
-Route::POST('/guardaedicionm','curso@guardaedicionm')->name('guardaedicionm');
 */
-
-
-
-
-
-
-
-
-
-
-
