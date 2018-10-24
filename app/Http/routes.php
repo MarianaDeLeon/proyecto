@@ -27,9 +27,7 @@ Route::get('/reportecliente','sistema@reportecliente');
 //rutas del catalogo usuarios
 Route::get('/altausuario','sistema@altausuario');
 Route::POST('/guardausuario','sistema@guardausuario')->name('guardausuario');
-//rutas del catalogo maquinaria
-Route::get('/altamaquinaria','sistema@altamaquinaria');
-Route::POST('/guardamaquinaria','sistema@guardamaquinaria')->name('guardamaquinaria');
+Route::get('/reporteusu','sistema@reporteusu');
 /*
 Route::get('/eliminam/{idm}','sistema@eliminam')->name('eliminam');
 Route::get('/modificaam/{idm}','sistema@modificam')->name('modificam');

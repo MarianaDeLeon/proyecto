@@ -4,10 +4,12 @@
 <h1> Reporte de Usuario</h1>
 <br>
 <table border =1>
-<tr><td>Clave</td><td>Logo</td><td>Nombre</td><td>Apellido Paterno</td><td>Apellido Materno</td><td>Empresa</td><td>Telefono</td><td>Direccion</td><td>CP</td><td>Municipio</td><td>Operaciones</td></tr>
-@foreach($clientes as $cl)
-<tr><td>{{$cl->id}}</td><td><img src = "{{asset('archivo/'.$cl->archivo)}}" height=50 width= 50></td><td>{{$cl->nombre}}</td><td>{{$cl->apat}}</td><td>{{$cl->amat}}</td><td>{{$cl->empresa}}</td><td>{{$cl->telefono}}</td><td>{{$cl->direccion}}</td>
-<td>{{$cl->cp}}</td><td>{{$cl->municipio_id}}</td>
+<tr><td>Clave</td><td>Nombre</td><td>Archivo</td><td>Apellido Paterno</td><td>Apellido Materno</td>
+<td>Calle</td><td>Telefono</td><td>Correo</td><td>Tipo</td><td>Activo</td><td>Operaciones</td></tr>
+@foreach($usuarios as $us)
+<tr><td>{{$us->id}}</td><td><img src = "{{asset('archivo/'.$usu->archivo)}}" height=50 width= 50></td>
+<td>{{$usu->nombre}}</td><td>{{$usu->apat}}</td><td>{{$usu->amat}}</td><td>{{$usu->calle}}</td><td>{{$usu->telefono}}</td><td>{{$usu->correo}}</td>
+<td>{{$usu->correo_usu}}</td><td>{{$usu->tipo}}</td><td>{{$usu->activo}}</td>
 <td><a href= "">
 Elimina</a> 
 <a href= "">

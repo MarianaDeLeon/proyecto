@@ -171,12 +171,12 @@ public function altausuario()
         ->with('mensaje',$mensaje);
 	  
 	}
-//REPORTE CLIENTE
-public function reporteclie() 
+//REPORTE USUARIO
+public function reporteusu() 
     {
-        $clientes = cliente::orderBy('nombre', 'asc')->get();
-        return view ('proyecto.reportecl')
-        ->with ('clientes', $clientes);
+        $usuarios = usuario::orderBy('nombre', 'asc')->get();
+        return view ('proyecto.reporteusu')
+        ->with ('usuarios', $usuarios);
     }
 
 

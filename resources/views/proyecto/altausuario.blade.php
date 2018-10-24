@@ -49,8 +49,8 @@ Correo<input type ='text' name = 'correo_usu' value="{{old('correo_usu')}}">
 Contraseña<input type = 'password' name= 'pass' value="{{old('pass')}}">
 <br>
 Tipo<select name = 'tipo'>
-<option value= 1>Admin</option>
-<option value=2>Usuario</option>
+<option value= 'admin'>Admin</option>
+<option value='usuario'>Usuario</option>
 
 
                   </select>
